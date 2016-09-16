@@ -27,10 +27,6 @@ button.botao {
 
 /* HEADER */
 
-form#formBusca {
-    padding-left: 0px;
-}
-
 header {
     display: block;
     margin: -10px -8px 0px -10px;
@@ -38,46 +34,6 @@ header {
     background-color: lightgray;
 }
 
-div#buscar{
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 970px;
-    background-color: aliceblue;
-    border: solid 2px darkslategray;
-    border-radius: 10px;
-    width: 300px;
-    height: 30px;
-}
-
-input#caixaBuscar {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-size: 12pt;
-    border: none;
-    width: 191px;
-    height: 30px;
-}
-
-input#caixaBuscar:focus {
-    outline: none;
-}
-
-button#buscar {
-    float: right;
-    margin-top: 0;
-    border: none;
-    height: 32px;
-    border-radius: 0 7px 7px 0;
-    width: 70px;
-    font-weight: bold;
-    color: whitesmoke;
-    background: darkslategray;
-}
-
-img#lupa_busca {
-    float: left;
-}
 
 /* FORMULÁRIOS */
 

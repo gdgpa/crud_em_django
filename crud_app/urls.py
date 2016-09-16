@@ -9,6 +9,4 @@ urlpatterns = [
     url(r'^pessoa/(?P<pk>[0-9]+)/cadastrar/novo_pertence/$', views.cadastrarPertences, name='cadastrarPertences'),
     url(r'^pessoa/(?P<pk>[0-9]+)/editar/$', views.editarPessoa, name='editarPessoa'),
     url(r'^pessoa/(?P<pk>[0-9]+)/excluir/$', views.excluir, name='excluir'),
-    url(r'^busca/$', views.busca, name='busca'),
-
 ]

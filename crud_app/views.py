@@ -55,6 +55,3 @@ def excluir(request, pk):
     pessoa = get_object_or_404(Pessoa, pk=pk)
     pessoa.delete()
     return redirect('listagem')
-
-def busca(request, busca):
-    return render(request, 'crud_app/busca.html', {'busca': busca})
