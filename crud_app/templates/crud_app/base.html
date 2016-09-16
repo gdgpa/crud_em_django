@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD em Django</title>
+    <link rel="stylesheet" href="{% static 'css/crud_app.css' %}">
+</head>
+<body>
+
+    <header>
+        <a href='{% url 'listagem' %}' class="inicio"><h1>CRUD em Django</h1></a>
+        <a href='{% url 'cadastrarPessoa' %}'class="cadastrar">Cadastrar</a>
+
+        <div id="buscar">
+            <img id="lupa_busca" src="{% static 'images/search3.png' %}"/>
+            <input type="text" id="caixaBuscar" placeholder="Buscar..." />
+            <button id="buscar" onclick="window.location.href='{% url 'busca' %}'">Buscar</button>
+        </div>
+    </header>
+
+    <div class="conteudo">
+        {% block conteudo %}
+        {% endblock conteudo%}
+    </div>
+
+<script>
+    function busca() {
+        var input = document.getElementById('caixaBuscar');
+        window.location.href="{% url 'busca' %}";
+    }
+</script>
+
+</body>
+</html>
